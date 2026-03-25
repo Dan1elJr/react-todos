@@ -1,14 +1,11 @@
-function TodoRowItem(){
-
-    const rowNumber = 1;
-    const rowDescription = 'Feed dog';
-    const rowsAssigned = 'Eric';
+// Using props for dynamically passed data
+function TodoRowItem(props){
 
     return(
         <tr>
-            <th scope='row'>{rowNumber}</th>
-            <td>{rowDescription}</td>
-            <td>{rowsAssigned}</td>
+            <th scope='row'>{props.rowNumber}</th>
+            <td>{props.rowDescription}</td>
+            <td>{props.rowAssigned}</td>
         </tr>
 
     )
